@@ -8,7 +8,7 @@ on:
     workflows: ["03 Build Artifact Workflow"]
     # Start when the build workflow has completed.
     types: [completed]
-  push:
+  workflow_dispatch:
 
 permissions:
   # Read access is enough because this workflow only downloads artifacts and reads repo data.
